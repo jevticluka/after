@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>AFTER - vesti</title>
+        <link>https://jevticluka.github.io/after/</link>
+        <description>Informišite se bolje o nama</description>
+        <item>
+            <title>Galerija</title>
+            <link>https://jevticluka.github.io/after/galerija.html</link>
+            <description>Pogledajte našu galeriju što pre</description>
+        </item>
+        <item>
+            <title>Kontakt</title>
+            <link>https://jevticluka.github.io/after/kontakt.html</link>
+            <description>Prijavite se za najnovije informacije</description>
+        </item>
+    </channel>
+</rss>
