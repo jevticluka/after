@@ -2,11 +2,11 @@
 <html lang="sr">
     <head>
         <title> 
-            AFTER BEOGRAD
+            AFTER
         </title>
         <meta charset="utf-8">
         <meta name="author" content="Luka Jevtić"/>
-		<meta name="keywords" content="kontakt, lokacija, rezervacija"/>
+		<meta name="keywords" content="informacije, novosi, lokacija"/>
 		<meta name="description" content="Kontakt-informacije noćnog kluba AFTER"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -28,7 +28,7 @@
                             epicentar beogradskog nightlife-a
                         </p>
                     </div>
-                    <nav id="meni">
+                    <nav>
                         <ul>
                             <li>
                                 <a href="index.html">klub</a>
@@ -89,10 +89,10 @@
                     <div class="informacije1">
                         <form action="#" method="get">
                             <h1>pišite nam</h1>
-                            <input type="text" name="ime" placeholder="VAŠE IME" autocomplete="off"/>
-                            <input type="text" name="prezime" placeholder="VAŠE PREZIME" autocomplete="off"/>
-                            <input type="email" name="email" placeholder="VAŠA E-MAIL ADRESA" autocomplete="off"/>
-                            <textarea name="poruka" cols="24" rows="8" placeholder="TEKST PORUKE"></textarea>
+                            <input type="text" name="ime" placeholder="VAŠE IME" autocomplete="off" spellcheck="false" required/>
+                            <input type="text" name="prezime" placeholder="VAŠE PREZIME" autocomplete="off" spellcheck="false" required/>
+                            <input type="email" name="email" placeholder="VAŠA E-MAIL ADRESA" autocomplete="off" spellcheck="false" required/>
+                            <textarea name="poruka" cols="24" rows="8" placeholder="TEKST PORUKE" spellcheck="false" required></textarea>
                             <input type="submit" name="posalji" id="posalji" value="pošalji"/>
                         </form>
                     </div>
@@ -103,7 +103,7 @@
                         unesite vašu e-mail adresu ako želite da budete u toku sa najnovijim dešavanjima
                     </p>
                     <form action="#" method="get">
-                        <input type="email" name="email" autocomplete="off"/>
+                        <input type="email" name="email" autocomplete="off" spellcheck="false" required/>
                         <input type="submit" value="potvrdi" id="potvrdi"/>
                     </form>
                 </div>

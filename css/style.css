@@ -175,7 +175,7 @@ nav ul li a:hover:not(.aktivno)
     display: flex;
     flex-direction: row;
 }
-#poljepretrage
+#pretraga input[type=search]
 {
     width: 100%;
     font-size: 20px;
@@ -185,11 +185,11 @@ nav ul li a:hover:not(.aktivno)
     color: #c2c2c2;
     outline: none;
 }
-#poljepretrage:focus
+#pretraga input[type=search]:focus
 {
     border: 2px solid #c2c2c2;
 }
-#lupa
+#pretraga button[type=reset]
 {
     background: transparent;
     color: #c2c2c2;
@@ -199,7 +199,7 @@ nav ul li a:hover:not(.aktivno)
     border: none;
     transition: 0.3s;
 }
-#lupa:hover
+#pretraga button[type=reset]:hover
 {
     color:#9502af
 }
@@ -446,7 +446,8 @@ footer .centriranje
     color: #9502af;
 }
 #slike
-{
+{   
+    width: 100%;
 	padding-bottom: 50px;
 	display: flex;
 	flex-direction: row;
@@ -521,7 +522,7 @@ footer .centriranje
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .informacije1
 {
@@ -558,10 +559,10 @@ footer .centriranje
 }
 .informacije1 #maps iframe 
 {
-    width: 99%;
+    width: 100%;
     height: 295px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 8px;
     border: none;
 }
 .informacije1 input,textarea 
