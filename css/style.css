@@ -1,4 +1,3 @@
-/*_______________________SVE_______________________*/
 *
 {
     margin: 0px;
@@ -59,12 +58,6 @@ header
     z-index: 100;
     animation: drop-header 1s ease forwards
 }
-@keyframes drop-header
-{
-    0%{opacity: 0;}
-    50%{transform: translateY(220px);}
-    100%{transform: translateY(200px);opacity: 1;}
-}
 header .centriranje
 {
     width: 95%;
@@ -97,7 +90,6 @@ header .centriranje
     margin: 5px auto 0;
     text-transform: uppercase;
     color: #c2c2c2;
-    cursor: default;
     font-weight: 600;
 }
 #slogan p
@@ -110,16 +102,6 @@ header .centriranje
     border-radius: 5px;
     text-align: center;
     animation: blinking 1.3s infinite;
-}
-@keyframes blinking
-{
-    0%{opacity: 1;}
-    5%{opacity: 0;}
-    10%{opacity: 1;}
-    15%{opacity: 0;}
-    20%{opacity: 1;}
-    25%{opacity: 0;}
-    30%{opacity: 1;}
 }
 nav
 {
@@ -240,15 +222,7 @@ nav ul li a:hover:not(.aktivno)
 {
     animation-delay: 14s;
 }
-@keyframes fadein
-{
-    20%{opacity: 1;}
-    40%{opacity: 0;}
-}
-@keyframes zoom
-{
-    100%{transform: scale(1.3)}
-}
+
 .slajd .naslov
 {
     width: 500px;
@@ -279,11 +253,6 @@ nav ul li a:hover:not(.aktivno)
     margin: 100px auto;
     animation: fadein2 2s ease forwards;
     opacity: 0;
-}
-@keyframes fadein2
-{
-    10%{opacity: 0;}
-    100%{opacity: 1;}
 }
 #oklubu h1
 {
@@ -343,85 +312,22 @@ nav ul li a:hover:not(.aktivno)
     background-color: #9502af;
 }
 
-/*_______________________FOOTER_______________________*/
-footer
-{
-    background-color: black;
-    width: 100%;
-    height: 90px;
-    border-top: 2px solid #9502af;
-    opacity: 0;
-    animation: fadein2 2s ease forwards;
-}
-footer .centriranje
-{
-    height: 90px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-}
-.footer1
-{
-    color: #c2c2c2;
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 15px;
-}
-.footer1 a
-{
-    color: #c2c2c2;
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 15px;
-    transition-duration: 0.3s;
-}
-.footer1 a:hover
-{
-    color: #9502af;
-}
-.footer1 p
-{
-    color: #c2c2c2;
-    font-size: 15px;
-    word-spacing: 30px;
-    text-align: center;
-    text-transform: uppercase;
-}
-#copyright img
-{
-    width: 165px;
-    margin: 15px auto 0px;
-}
-#copyright p
-{
-    font-weight: 700;
-    color: #c2c2c2;
-    font-size: 10px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-/*_______________________GALERIJA_______________________*/
-#galerija
+/*_______________________PROGRAM_______________________*/
+#program
 {
     opacity: 0;
     animation: fadein2 2s ease forwards;
 }
-#naslovna
+#program #naslovna
 {
     width: 100%;
     height: 90vh;
-    background-image: url(../img/ples.gif);
+    background-image: url(../img/mikseta.gif);
     background-size: cover;
     position: relative;
     margin-bottom: 50px;
 }
-#naslovna .naslov
+#program #naslovna .naslov
 {
     width: 500px;
     position: absolute;
@@ -433,7 +339,114 @@ footer .centriranje
     color: #c2c2c2;
     padding: 100px 50px;
 }
-#naslovna .naslov h1
+#program #naslovna .naslov h1
+{
+    font-size: 50px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#program #naslovna .naslov h1 span
+{
+    color: #9502af;
+}
+#djs
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.dj
+{
+    width: 90%;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dj .slika
+{
+    width: 700px;
+    height: 400px;
+    flex-wrap: wrap;
+    border: 2px solid #9502af;
+    border-radius: 5px;
+}
+.dj .slika img
+{
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: saturate(0.3);
+    transition: transform 0.3s, filter 0.7s;
+}
+.dj .slika img:hover
+{
+    filter: saturate(1);
+    transform: scale(1.03);
+}
+.dj .opis
+{
+    width: 600px;
+    height: 400px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.dj .opis h2
+{
+    font-size: 30px;
+    color: #9502af;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.dj .opis p
+{
+    font-size: 20px;
+    color: #c2c2c2;
+    text-align: justify;
+}
+.dj .opis a
+{
+    font-size: 20px;
+    color: #c2c2c2;
+    background-color: #000000;
+    border: 2px solid #9502af;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+/*_______________________GALERIJA_______________________*/
+#galerija
+{
+    opacity: 0;
+    animation: fadein2 2s ease forwards;
+}
+#galerija #naslovna
+{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/ples.gif);
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+#galerija #naslovna .naslov
+{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+    color: #c2c2c2;
+    padding: 100px 50px;
+}
+#galerija #naslovna .naslov h1
 {
     font-size: 50px;
     word-spacing: 5px;
@@ -456,31 +469,28 @@ footer .centriranje
     opacity: 0;
     animation: fadein2 2s ease forwards;
 }
-.slika
+#slike .slika
 {
 	width: 400px;
 	height: 400px;
     margin: 1%;
     margin: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
     border: 2px solid #9502af;
     border-radius: 5px;
 }
-.slika img
+#slike .slika img
 {
-	width: 395px;
-	height: 395px;
+	width: 400px;
+	height: 400px;
 	border-radius: 5px;
 	object-fit: cover;
-    filter: saturate(0.1) blur(1px);
+    filter: saturate(0.2);
 	transition: transform 0.3s, filter 0.7s;
 }
-.slika a:hover img
+#slike .slika img:hover 
 {
     transform: scale(1.2);
-	filter: saturate(1) blur(0);
+	filter: saturate(0.9);
 }
 #galerija #brojstrane
 {
@@ -596,7 +606,7 @@ footer .centriranje
     margin-top: 103px;
     width: 20%;
     font-size: 25px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     border: 2px solid #9502af;
     border-radius: 5px;
     background-color: #000000;
@@ -665,6 +675,7 @@ footer .centriranje
     background-color: #000000;
     color: #c2c2c2;
     border: 2px solid #000000;
+    border-radius: 5px;
     margin-left: 5px;
     text-transform: uppercase;
     cursor: pointer;
@@ -762,4 +773,99 @@ figcaption
 #oautoru a
 {
     color: #9502af;
+}
+
+/*_______________________FOOTER_______________________*/
+footer
+{
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    border-top: 2px solid #9502af;
+    opacity: 0;
+    animation: fadein2 2s ease forwards;
+}
+footer .centriranje
+{
+    height: 90px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+.linkovi
+{
+    color: #c2c2c2;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 15px;
+}
+.linkovi a
+{
+    color: #c2c2c2;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 15px;
+    transition-duration: 0.3s;
+}
+.linkovi a:hover
+{
+    color: #9502af;
+}
+.linkovi p
+{
+    color: #c2c2c2;
+    font-size: 15px;
+    word-spacing: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#copyright img
+{
+    width: 165px;
+    margin: 15px auto 0px;
+}
+#copyright p
+{
+    font-weight: 700;
+    color: #c2c2c2;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*_______________________ANIMACIJE_______________________*/
+@keyframes drop-header
+{
+    0%{opacity: 0;}
+    50%{transform: translateY(220px);}
+    100%{transform: translateY(200px);opacity: 1;}
+}
+@keyframes blinking
+{
+    0%{opacity: 1;}
+    5%{opacity: 0;}
+    10%{opacity: 1;}
+    15%{opacity: 0;}
+    20%{opacity: 1;}
+    25%{opacity: 0;}
+    30%{opacity: 1;}
+}
+@keyframes fadein
+{
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+}
+@keyframes zoom
+{
+    100%{transform: scale(1.3)}
+}
+@keyframes fadein2
+{
+    10%{opacity: 0;}
+    100%{opacity: 1;}
 }

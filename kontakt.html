@@ -4,7 +4,7 @@
         <title> 
             AFTER
         </title>
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
         <meta name="author" content="Luka Jevtić"/>
 		<meta name="keywords" content="informacije, novosi, lokacija"/>
 		<meta name="description" content="Kontakt-informacije noćnog kluba AFTER"/>
@@ -32,14 +32,15 @@
                         <ul>
                             <li>
                                 <a href="index.html">klub</a>
+                            </li>
+                            <li>
+                                <a href="program.html">program</a>
+                            </li>
                             <li>
                                 <a href="galerija.html">galerija</a>
                             </li>
                             <li>
                                 <a class="aktivno" href="#">kontakt</a>
-                            </li>
-                            <li>
-                                <a href="oautoru.html">o autoru</a>
                             </li>
                         </ul>
                     </nav>
@@ -47,7 +48,7 @@
                 <div id="pretraga">
                     <form action="#" method="get">
                         <input type="search" placeholder="Pretraži..." maxlength="20" spellcheck="false" id="poljepretrage" name="poljepretrage" autocomplete="off"/>
-                        <button type="reset" id="lupa"><i class="fa fa-search"></i></button>
+                        <button type="reset" value="lupa" id="lupa" name="lupa"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
             </div>
@@ -82,18 +83,18 @@
                             afterbeograd<span>&#64;</span>gmail.com
                         </p>
                         <div id="maps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3406350901823!2d20.48169131549837!3d44.81462467909862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2sICT%20College!5e0!3m2!1ssr!2srs!4v1575662168382!5m2!1ssr!2srs" allowfullscreen="">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3406350901823!2d20.48169131549837!3d44.81462467909862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2sICT%20College!5e0!3m2!1ssr!2srs!4v1575662168382!5m2!1ssr!2srs">
                             </iframe>
                         </div>
                     </div>
                     <div class="informacije1">
                         <form action="#" method="get">
                             <h1>pišite nam</h1>
-                            <input type="text" name="ime" placeholder="VAŠE IME" autocomplete="off" spellcheck="false" required/>
-                            <input type="text" name="prezime" placeholder="VAŠE PREZIME" autocomplete="off" spellcheck="false" required/>
-                            <input type="email" name="email" placeholder="VAŠA E-MAIL ADRESA" autocomplete="off" spellcheck="false" required/>
-                            <textarea name="poruka" cols="24" rows="8" placeholder="TEKST PORUKE" spellcheck="false" required></textarea>
-                            <input type="submit" name="posalji" id="posalji" value="pošalji"/>
+                            <input type="text" name="ime" id="ime" placeholder="VAŠE IME" autocomplete="off" spellcheck="false" required/>
+                            <input type="text" name="prezime" id="prezime" placeholder="VAŠE PREZIME" autocomplete="off" spellcheck="false" required/>
+                            <input type="email" name="email" id="email" placeholder="VAŠA E-MAIL ADRESA" autocomplete="off" spellcheck="false" required/>
+                            <textarea name="poruka" id="poruka" cols="24" rows="8" placeholder="TEKST PORUKE" spellcheck="false" required></textarea>
+                            <button type="submit" name="posalji" id="posalji" value="posalji">pošalji</button>
                         </form>
                     </div>
                 </div>
@@ -103,22 +104,22 @@
                         unesite vašu e-mail adresu ako želite da budete u toku sa najnovijim dešavanjima
                     </p>
                     <form action="#" method="get">
-                        <input type="email" name="email" autocomplete="off" spellcheck="false" required/>
-                        <input type="submit" value="potvrdi" id="potvrdi"/>
+                        <input type="email" name="email2" id="email2" autocomplete="off" spellcheck="false" required/>
+                        <button type="submit" value="potvrdi" name="potvrdi" id="potvrdi">potvrdi</button>
                     </form>
                 </div>
             </div>
         </main>
         <footer>
             <div class="centriranje">
-                <div class="footer1">
+                <div class="linkovi">
                     <p>
                         Mreže
                     </p>
                     <p>
-                        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" id="facebook"></a>&nbsp;
-                        <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" id="twitter"></a>&nbsp;
-                        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram" id="instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>&nbsp;
+                        <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>&nbsp;
+                        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
                     </p>
                 </div>
                 <div id="copyright">
@@ -129,14 +130,14 @@
                         Copyright © 2021 Luka Jevtić
                     </p>
                 </div>
-                <div class="footer1">
+                <div class="linkovi">
                     <p>
                         Info
                     </p>
                     <p>
-                        <a href="rss.xml" target="_blank" class="fa fa-rss" id="rss"></a>&nbsp;
-                        <a href="sitemap.xml" target="_blank" class="fa fa-sitemap" id="sitemap"></a>&nbsp;
-                        <a href="oautoru.html" class="fa fa-user" id="info"></a>
+                        <a href="rss.xml" target="_blank" class="fa fa-rss"></a>&nbsp;
+                        <a href="sitemap.xml" target="_blank" class="fa fa-sitemap"></a>&nbsp;
+                        <a href="oautoru.html" class="fa fa-user"></a>
                     </p>
                 </div>
             </div>
