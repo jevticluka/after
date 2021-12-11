@@ -19,6 +19,7 @@ body
 ::-webkit-scrollbar
 {
 	width: 10px;
+    overflow: auto;
 }
 ::-webkit-scrollbar-track
 {
