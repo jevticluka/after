@@ -51,6 +51,7 @@ header
     height: 120px;
     background-image:url("../img/header.jpg");
     background-size: cover;
+    opacity: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 10px 10px 10px;
@@ -889,7 +890,7 @@ footer .centriranje
 {
     0%{opacity: 0;}
     50%{transform: translateY(220px);}
-    100%{transform: translateY(200px);opacity: 1;}
+    100%{transform: translateY(200px);opacity: 0.9;}
 }
 @keyframes blinking
 {
