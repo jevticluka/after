@@ -888,9 +888,9 @@ footer .centriranje
 /*_______________________ANIMACIJE_______________________*/
 @keyframes drop-header
 {
-    0%{opacity: 0;}
+    10%{opacity: 0;}
     50%{transform: translateY(220px);}
-    100%{transform: translateY(200px);opacity: 0.9;}
+    100%{transform: translateY(200px);opacity: 1;}
 }
 @keyframes blinking
 {
