@@ -10,8 +10,7 @@ html
 }
 body
 {
-    width: 1523.2px;
-    margin: 0 auto;
+    width: 1523px;
     padding-top: 117px;
     user-select: none;
     background-color: #000000;
@@ -48,7 +47,7 @@ a
 header
 {
     top: -200px;
-    width: 1523.2px;
+    width: 1523px;
     height: 120px;
     background-image:url("../img/header.jpg");
     background-size: cover;
@@ -57,7 +56,7 @@ header
     box-shadow: 10px 10px 10px;
     position: fixed;
     z-index: 100;
-    animation: drop-header 1s ease forwards
+    animation: drop-header 1s ease forwards;
 }
 header .centriranje
 {
@@ -202,7 +201,7 @@ nav ul li a:not(.aktivno)::after
 }
 
 /*_______________________INDEX_______________________*/
-#slajder
+#slajder 
 {
     width: 100%;
     height: 90vh;
@@ -211,33 +210,47 @@ nav ul li a:not(.aktivno)::after
 }
 .slajd
 {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    opacity: 0;
-    animation: fadein 21s infinite;
-
-}
-.slajd img
-{
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadein 21s infinite;
+}
+.slajd .slika
+{
+    width: inherit;
+    height: inherit;
+    position: relative;
+    background-size: cover;
     object-fit: cover;
     animation: zoom 21s infinite;
 }
-.slajd:nth-child(1),.slajd:nth-child(1) img
+.slajd:nth-child(1) .slika
+{
+    background-image: url(../img/slajd1.jpg);
+}
+.slajd:nth-child(2) .slika
+{
+    background-image: url(../img/slajd2.jpg);
+}
+.slajd:nth-child(3) .slika
+{
+    background-image: url(../img/slajd3.jpg);
+}
+.slajd:nth-child(1),.slajd:nth-child(1) .slika
 {
     animation-delay: 0s;
 }
-.slajd:nth-child(2),.slajd:nth-child(2) img
+.slajd:nth-child(2),.slajd:nth-child(2) .slika
 {
     animation-delay: 7s;
 }
-.slajd:nth-child(3),.slajd:nth-child(3) img
+.slajd:nth-child(3),.slajd:nth-child(3) .slika
 {
     animation-delay: 14s;
 }
-
 .slajd .naslov
 {
     width: 500px;
@@ -266,8 +279,8 @@ nav ul li a:not(.aktivno)::after
 {
     width: 60%;
     margin: 100px auto;
-    animation: fadein2 2s ease forwards;
     opacity: 0;
+    animation: fadein2 2s ease forwards;
 }
 #oklubu h1
 {
@@ -304,13 +317,11 @@ nav ul li a:not(.aktivno)::after
     height: 30px;
     margin: 30px auto;
     text-align: center;
-    vertical-align: middle;
 }
 #oklubu #kontakt a
 {   
     text-transform: uppercase;
     text-align: center;
-    margin: auto;
     font-size: 25px;
     color: #c2c2c2;
     letter-spacing: 2px;
@@ -773,7 +784,6 @@ figcaption
     border-radius: 5px;
     padding: 2px;
     text-align: center;
-    vertical-align: middle;
     text-transform: uppercase;
 }
 #oautoru img
@@ -828,7 +838,7 @@ footer .centriranje
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
+    margin: 0 auto;
 }
 .linkovi
 {
