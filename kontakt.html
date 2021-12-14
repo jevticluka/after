@@ -47,8 +47,8 @@
                     </nav>
                 </div>
                 <div id="pretraga">
-                    <form action="#" method="get">
-                        <input type="search" placeholder="Pretraži..." maxlength="20" spellcheck="false" id="poljepretrage" name="poljepretrage" autocomplete="off"/>
+                    <form action="#" method="get" autocomplete="off" spellcheck="false">
+                        <input type="search" placeholder="Pretraži..." maxlength="20" id="poljepretrage" name="poljepretrage"/>
                         <button type="reset" value="lupa" id="lupa" name="lupa"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -89,12 +89,12 @@
                         </div>
                     </div>
                     <div class="informacije1">
-                        <form action="#" method="get">
+                        <form action="#" method="get" autocomplete="off" spellcheck="false">
                             <h1>pišite nam</h1>
-                            <input type="text" name="ime" id="ime" placeholder="VAŠE IME" autocomplete="off" spellcheck="false" required/>
-                            <input type="text" name="prezime" id="prezime" placeholder="VAŠE PREZIME" autocomplete="off" spellcheck="false" required/>
-                            <input type="email" name="email" id="email" placeholder="VAŠA E-MAIL ADRESA" autocomplete="off" spellcheck="false" required/>
-                            <textarea name="poruka" id="poruka" cols="24" rows="8" placeholder="TEKST PORUKE" spellcheck="false" required></textarea>
+                            <input type="text" name="ime" id="ime" placeholder="VAŠE IME" required="required"/>
+                            <input type="text" name="prezime" id="prezime" placeholder="VAŠE PREZIME" required="required"/>
+                            <input type="email" name="email" id="email" placeholder="VAŠA E-MAIL ADRESA" required="required"/>
+                            <textarea name="poruka" id="poruka" cols="24" rows="8" placeholder="TEKST PORUKE" required="required"></textarea>
                             <button type="submit" name="posalji" id="posalji" value="posalji">pošalji</button>
                         </form>
                     </div>
@@ -104,8 +104,8 @@
                     <p>
                         unesite vašu e-mail adresu ako želite da budete u toku sa najnovijim dešavanjima
                     </p>
-                    <form action="#" method="get">
-                        <input type="email" name="email2" id="email2" autocomplete="off" spellcheck="false" required/>
+                    <form action="#" method="get" autocomplete="off" spellcheck="false">
+                        <input type="email" name="email2" id="email2" required/>
                         <button type="submit" value="potvrdi" name="potvrdi" id="potvrdi">potvrdi</button>
                     </form>
                 </div>
