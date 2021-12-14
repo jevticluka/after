@@ -1,7 +1,7 @@
 *
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Pavanam';
 }
 html
@@ -11,6 +11,7 @@ html
 body
 {
     width: 1523px;
+    margin: 0 auto;
     padding-top: 117px;
     user-select: none;
     background-color: #000000;
@@ -144,10 +145,10 @@ nav ul li a:not(.aktivno)::after
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 0%;
+    width: 0;
     height: 2px;
     background: #9502af;
-    transition: 0.3s ease-out;
+    transition: 0.2s ease-out;
 }
   
   nav ul li a:not(.aktivno):hover::after
@@ -171,6 +172,7 @@ nav ul li a:not(.aktivno)::after
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 #pretraga input[type=search]
 {
@@ -548,7 +550,7 @@ nav ul li a:not(.aktivno)::after
     border: 2px solid #9502af;
     border-radius: 5px;
     transition: 0.3s;
-    margin: 0px 5px;
+    margin: 0 5px;
 }
 #galerija #brojstrane .active
 {
@@ -873,7 +875,7 @@ footer .centriranje
 #copyright img
 {
     width: 165px;
-    margin: 15px auto 0px;
+    margin: 15px auto 0;
 }
 #copyright p
 {
