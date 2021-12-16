@@ -88,14 +88,18 @@ header .centriranje
 }
 #slogan
 {
-    width: 55%;
     margin: 5px auto 0;
     text-transform: uppercase;
     color: #c2c2c2;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 #slogan p
 {
+    width: max-content;
+    display: block;
+    padding: 0 10px;
     font-size: 18px;
     border: 2px solid #9502af;
     background-color: rgba(0, 0, 0, 0.4);
@@ -123,13 +127,13 @@ nav ul li
 {
     margin: 14px 0;
     display: inline-block;
-    text-align: center;
+    justify-content: space-evenly;
     font-size: 25px;
     text-transform: uppercase;
 }
 nav ul li:not(:first-child)
 {
-    margin-left: 25px;
+    margin-left: 5%;
 }
 nav ul li a
 {
@@ -281,7 +285,7 @@ nav ul li a:not(.aktivno)::after
 }
 #oklubu
 {
-    width: 60%;
+    width: 55%;
     margin: 100px auto;
     opacity: 0;
     animation: fadein2 2s ease forwards;
@@ -395,12 +399,13 @@ nav ul li a:not(.aktivno)::after
     margin: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .dj .slika
 {
     width: 700px;
     height: 400px;
+    margin: 10px;
     flex-wrap: wrap;
     border: 2px solid #9502af;
     border-radius: 5px;
@@ -423,6 +428,7 @@ nav ul li a:not(.aktivno)::after
 {
     width: 600px;
     height: 400px;
+    margin: 10px;
     text-transform: uppercase;
 }
 .dj .opis h2
@@ -569,7 +575,7 @@ nav ul li a:not(.aktivno)::after
 /*_______________________KONTAKT_______________________*/
 #kontakt
 {
-    margin-top: 70px;
+    margin-top: 100px;
     opacity: 0;
     animation: fadein2 2s ease forwards;
 }
@@ -617,7 +623,6 @@ nav ul li a:not(.aktivno)::after
     width: 100%;
     height: 295px;
     border-radius: 5px;
-    margin-top: 8px;
     border: none;
     filter: invert(1) hue-rotate(200deg) saturate(0.2);
     transition: 0.3s;
@@ -654,7 +659,7 @@ nav ul li a:not(.aktivno)::after
 }
 .informacije1 #posalji
 {
-    margin-top: 103px;
+    margin-top: 95px;
     width: 20%;
     font-size: 25px;
     text-transform: uppercase; 
@@ -679,7 +684,7 @@ nav ul li a:not(.aktivno)::after
     flex-direction: column;
     align-items: center;
     background-color: #9502af;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 #novosti h1
 {
@@ -776,7 +781,6 @@ nav ul li a:not(.aktivno)::after
 #oautoru #biografija figure
 {
     width: 45%;
-    height: 430px;
     padding-bottom: 50px;
 }
 figcaption
@@ -810,7 +814,6 @@ figcaption
 }
 #oautoru p
 {
-
     font-size: 20px;
     color: #c2c2c2;
     margin-bottom: 20px;
