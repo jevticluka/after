@@ -227,6 +227,7 @@ nav ul li a:not(.aktivno)::after
     height: inherit;
     position: relative;
     background-size: cover;
+    background-attachment: fixed;
     object-fit: cover;
     animation: zoom 21s infinite;
 }
@@ -353,6 +354,7 @@ nav ul li a:not(.aktivno)::after
     height: 90vh;
     background-image: url(../img/mikseta.gif);
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     margin-bottom: 50px;
 }
@@ -473,6 +475,7 @@ nav ul li a:not(.aktivno)::after
     height: 90vh;
     background-image: url(../img/ples.gif);
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     margin-bottom: 50px;
 }
